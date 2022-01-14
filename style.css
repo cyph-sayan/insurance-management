@@ -1,0 +1,235 @@
+
+
+:root {
+  --body-font-size: 18px;
+  --body-font-weight: 300;
+  --header-font-weight: 500;
+
+  --main-lateral-padding: 17px;
+
+  --footer-color: #bbbbbb;
+  --link-color: #248ef1;
+  --link-underline-color: #248ef1e5;
+
+  --small-link-color: #3f3f3f;
+  
+}
+
+
+* {
+  font-family: Crimson Pro,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: auto;
+  background-image: url("images/002.png");
+}
+
+.main {
+  margin: auto;
+  width: 100%;
+}
+#img1 {
+  margin-top: 15px;
+  opacity: 50%;
+  margin-bottom: 15px;
+}
+
+
+.padding {
+  padding: 12px;
+}
+
+.padding-semi-large {
+  padding: 14px 0px;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: var(--header-font-weight);
+  text-align: left;
+  line-height: 125%;
+  margin: auto;
+}
+h1 {
+  
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  
+}
+p {
+  font-size: 18px;
+  line-height: 160%;
+  margin: auto;
+  font-weight: var(--body-font-weight);
+}
+
+#indicators {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  align-items: center;
+}
+
+#repo-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.indicator-separator {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.indicator {
+  font-size: 16px;
+  color: #00000059;
+  font-weight: 400;
+}
+
+#indicators a {
+  text-underline-offset: 1px;
+  transition: 0.2s;
+}
+
+#indicators a:hover {
+  color: var(--small-link-color);
+}
+
+
+
+.button-standard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  padding-left: 11px;
+  padding-right: 11px;
+  background-color: rgba(255, 255, 255, 0.4);
+
+  border-color: rgba(0, 0, 0, 0.14);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000000;
+
+  box-sizing: border-box;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.07);
+  font-size: 16px;
+  font-weight: var(--header-font-weight);
+
+  transition: all 0.15s ease;
+}
+
+.button-standard:visited {
+  color: inherit;
+}
+
+.button-standard:hover {
+  transform: scale(1.08);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#section-1 {
+  padding-top: 30px;
+}
+
+#app-store-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ margin-top: -50px;
+}
+
+#app-store-buttons p {
+  font-size: 24px;
+  opacity: 0.1;
+  line-height: 0%;
+  padding: 15px;
+
+}
+#app-store-buttons1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+#app-store-buttons1 p {
+  
+  font-size: 24px;
+  opacity: 0.1;
+  line-height: 0%;
+  padding: 15px;
+  
+  
+}
+
+.section-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#landing-header {
+  text-align: center;
+  padding-top: 10px;
+  
+}
+
+.main {
+  max-width: 750px;
+}
+
+/* Mobile Only */
+@media only screen and (max-width: 425px) {
+  body {
+    background-size: 1200%;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #app-store-buttons {
+    display: contents;
+  }
+}
+
+/* Mobile Design - Tablet */
+@media only screen and (max-width: 999px) {
+  body {
+    background-size: 1200%;
+  }
+
+  /* Make sure to show the links once we're on a desktop */
+
+  /* Make buttons stack instead */
+/**/
+
+  #app-store-buttons p {
+    padding: 8px;
+    visibility: hidden;
+  }
+}
+
+/* Desktop Design */
+@media only screen and (min-width: 1000px) {
+  body {
+    background-size: 700%;
+  }
+
+}
